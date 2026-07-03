@@ -1,0 +1,47 @@
+{% extends "portfolio/base.html" %}
+{% load static %}
+
+
+{% block title %}
+Project
+{% endblock %}
+
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'portfolio/css/project.css' %}">
+{% endblock %}
+
+
+{% block content %}
+
+<div class="main-heading">Projects</div>
+<div class="grid">
+    <div class="card">
+        <div class="card-heading">AI Face Recognition Attendance System</div>
+        <div class="columns">
+            <div class="left-column"></div>
+            <div class="right-column"></div>
+        </div>
+
+        <div class="line">-</div>
+        <div class="video-heading">Live Technical Demonstration</div>
+        <div class="video-container">
+            <iframe
+                src="https://www.youtube.com/embed/2EO_WfT-Qds?start=65&autoplay=1&mute=1&loop=1&playlist=2EO_WfT-Qds&rel=0"
+                title="Live Technical Demonstration"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-static; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+            </iframe>
+        </div>
+                    
+        <div class="link">
+            <a class="link" href="https://github.com/Arpit-TheDeveloper/AI-Face-Recognition-Attendance-System" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+
+            <a href="https://www.youtube.com/watch?v=2EO_WfT-Qds&t=1s" target="_blank" rel="noopener noreferrer">Watch on YouTube</a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
