@@ -28,7 +28,3 @@ def certification(request):
 
 def contact(request):
     return render(request, "portfolio/contact.html")
-
-
-def hireme(request):
-    return render(request, "portfolio/hireme.html")
