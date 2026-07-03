@@ -1,0 +1,56 @@
+{% extends "portfolio/base.html" %}
+{% load static %}
+
+
+{% block title %}
+Home
+{% endblock %}
+
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'portfolio/css/home.css' %}">
+{% endblock %}
+
+
+{% block content %}
+
+<div class="box">
+    <div class="top-line">💠 Available for new Opportunities</div>
+</div>
+<div class="grid">
+    <section class="sect">
+        <div class="i-am">Hi, I'm</div>
+        <div class="name"><span style="color: #ffffff;">Arpit</span> Gupta</div>
+        <div class="designation">
+            <div class="desig">Backend Developer</div>
+            <div class="desig">💠</div>
+            <div class="desig">Python</div>
+        </div>
+
+        <div class="intro">
+            <p>I build <span style="color: #cbd0d1;">scalable, real-time web applications</span> with clean architecture and user-centric design. Passionate about backend ecosystems, security, and shipping products that actually matter.</p>
+        </div>
+
+        <div class="button">
+            <a class="btn" href="mailto:gupta.arpitkumar11112005@gmail.com" target="_blank" rel="noopener noreferrer">
+                Hire Me
+            </a>
+
+            <a class="btn" href="{% static 'portfolio/images/resume/My_resume.pdf' %}" target="_blank" rel="noopener noreferrer">
+                Resume
+            </a>
+
+            <a class="btn" href="https://www.linkedin.com/in/engr-arpit-gupta" target="_blank" rel="noopener noreferrer">
+                LinkedIn
+            </a>
+        </div>
+    </section>
+    
+    <section class="sect">
+        <div class="photo">
+            <img src="{% static "portfolio/images/my_photo/My_Photo.png" %}" alt="My Photo">
+        </div>
+    </section>
+</div>
+
+{% endblock %}

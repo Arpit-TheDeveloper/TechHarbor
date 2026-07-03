@@ -1,0 +1,58 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}{% endblock %}
+    </title>
+
+    {% block css %}
+    {% endblock %}
+
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="github-username">Arpit-TheDeveloper</div>
+            <div class="hamburger" id="hamburger">☰</div>
+            <div class="navbar-content" id="navbar-content">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="skills.html">Skills</a>
+                <a href="project.html">Project</a>
+                <a href="experience.html">Experience</a>
+                <a href="certification.html">Certification</a>
+                <a href="contact.html">Contact</a>
+                <a id="hire-me" href="mailto:gupta.arpitkumar11112005@gmail.com" target="_blank" rel="noopener noreferrer">Hire Me</a>
+            </div>
+        </div>
+    </nav>
+
+    {% block content %}{% endblock %}
+
+    <footer class="footer">
+        <div class="footer-icons">
+            <a href="https://github.com/Arpit-TheDeveloper" target="_blank" rel="noopener noreferrer">
+                <img src="{% static 'portfolio/images/footer/github_logo.png' %}" alt="GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/engr-arpit-gupta" target="_blank" rel="noopener noreferrer">
+                <img src="{% static 'portfolio/images/footer/linkedin_logo.avif' %}" alt="LinkedIn">
+            </a>
+            <a href="mailto:gupta.arpitkumar11112005@gmail.com" target="_blank" rel="noopener noreferrer">
+                <img src="{% static "portfolio/images/footer/mail_logo.webp" %}" alt="Mail">
+            </a>
+        </div>
+        
+        <div class="copyright">
+            <p>
+                Designed & Built by Arpit Gupta
+                <br>
+                © 2026 All rights reserved
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
