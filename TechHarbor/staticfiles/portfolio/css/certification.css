@@ -1,0 +1,247 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+*{
+    margin: 0;
+    left: 0;
+}
+
+
+body{
+    background-color: #050506;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+
+
+.background-video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+
+.hamburger{
+    display: none;
+}
+
+
+.github-username{
+    font-size: 30px;
+    padding: 20px;
+    font-weight: bold;
+    color: aliceblue;
+    text-shadow: 2px 2px 4px #848282;
+}
+
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #050506;
+    border-bottom: 1px solid #222222;
+    z-index: 100;
+}
+
+
+.navbar{
+    display: flex;  
+}
+
+
+.navbar-content{
+    display: flex;
+    width: 69%;
+    margin-left: auto;
+}
+
+
+.navbar-content a{
+    display: flex;
+    text-decoration: none;
+    color: #babfc4;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    padding: 15px;
+    margin: auto;
+    border-radius: 8px;
+}
+
+
+.navbar-content a:hover{
+    background-color: #022624;
+}
+
+
+#hire-me{
+    justify-content: center;
+    background-color: azure;
+    color: black;
+    text-shadow: 2px 2px 4px #848282;
+}
+
+
+#hire-me:hover{
+    color: #1a1919;
+    transition: transform 0.1s ease-in-out;
+    transform: scale(1.05);
+}
+
+
+.footer{
+    background-color: #050506;
+    border-top: 1px solid #222222;
+    width: 100%;
+    left: 0;
+}
+
+
+.footer-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+
+.footer-icons img{
+    width: 40px;
+    border-radius: 40%;
+    padding: 50px 0 50px 0;
+}
+
+
+.copyright{
+    color: #babfc4;
+    text-align: center;
+}
+
+
+.copyright p{
+    margin-top: 0;
+    padding: 0 0 50px 0;
+}
+
+
+.copyright p{
+    margin-top: 0;
+    padding: 0 0 50px 0;
+}
+
+
+.heading{
+    color: #f2dada;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 110px;
+    width: 100%;
+}
+
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+    margin: 40px auto;
+    margin-top: 40px;
+    border-radius: 20px;
+}
+
+
+.card{
+    background-color: #0d0d0d;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    width: 80%;
+    min-height: 220px;
+    height: auto;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 30px;
+    color: #babfc4;
+    text-decoration: none;
+    border: 1px solid #a19c9c;
+}
+
+
+.card:hover{
+    transition: transform 0.2s ease-in-out;
+    transform: scale(1.07);
+    border: 1px solid #6d6aa3;
+    box-shadow: 1px 1px 13px #dac4c4;
+}
+
+
+.name{
+    color: #7d40f7;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+
+.collection{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+
+.cert{
+    color: #49d158;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+
+/* For Tablets */
+@media (max-width: 768px) {
+    .navbar{
+        display: flex;
+    }
+
+
+    .hamburger{
+        display: block;
+        margin: auto;
+        transform: scale(1.7);
+    }
+
+
+    .github-username{
+        width: 70%;
+        font-size: 30px;
+        padding: 20px;
+    }
+
+
+    .navbar-content{
+        display: none;
+        flex-direction: column;
+    }
+
+
+    .navbar-content.active{
+        display: flex;
+    }
+
+
+    .grid{
+    grid-template-columns: repeat(1, 1fr);        
+    }
+}
