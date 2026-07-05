@@ -47,43 +47,47 @@ Contact
     </div>
 
     <div class="main-right-child-grid">
-        <div class="layout">
-            <div class="block">
-                <div class="box">
-                    <div class="name">
-                        <label for="name">Name</label>
-                    </div>
-                    <br>
-                    <div class="input">
-                        <input type="text" id="name" placeholder="Your Name">
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="name">
-                        <label for="email">Email</label>
-                    </div>
-                    <br>
-                    <div class="input">
-                        <input type="email" id="email" placeholder="Email Address">
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="name">
-                        <label for="message">Message</label>
-                    </div>
-                    <br>
-                    <div class="input">
-                        <input type="text" id="message" placeholder="What's on your mind...??">
-                    </div>
-                </div>
-            </div>
+        <form method="post">
+            {% csrf_token %}
 
-            <div class="button">
-                <a href="#" class="send-btn">
-                    ↗️ Send Engineering Brief
-                </a>
+            <div class="layout">
+                <div class="block">
+                    <div class="box">
+                        <div class="name">
+                            <label for="name">Name</label>
+                        </div>
+                        <br>
+                        <div class="input">
+                            <input type="text" name="name" id="name" placeholder="Your Name">
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="name">
+                            <label for="email">Email</label>
+                        </div>
+                        <br>
+                        <div class="input">
+                            <input type="email" name="email" id="email" placeholder="Email Address">
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="name">
+                            <label for="message">Message</label>
+                        </div>
+                        <br>
+                        <div class="input">
+                            <input type="text" name="message" id="message" placeholder="What's on your mind...??">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="button">
+                    <a href="#" class="send-btn">
+                        ↗️ Send Engineering Brief
+                    </a>
+                </div>
             </div>
-        </div>
+        </form>
     </div>
 </div>
 <a href="https://forms.gle/sxYKacgdphzX1VvDA" class="google-form" target="_blank" rel="noopener noreferrer">

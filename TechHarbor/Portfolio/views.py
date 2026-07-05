@@ -28,3 +28,12 @@ def certification(request):
 
 def contact(request):
     return render(request, "portfolio/contact.html")
+
+
+def query(request):
+    try:
+        if request.method=="POST":
+            name=request.POST.get("")
+    except:
+        pass
+    return render(request, "portfolio/contact.html")
