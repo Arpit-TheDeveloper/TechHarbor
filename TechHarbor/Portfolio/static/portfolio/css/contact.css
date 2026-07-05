@@ -168,11 +168,11 @@ nav{
 
 .main-grid{
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     margin: auto;
     margin-top: 70px;
     margin-bottom: 40px;
-    width: 30%;
+    width: 65%;
     border-radius: 15px;
 }
 
@@ -180,7 +180,7 @@ nav{
 .main-left-child-grid{
     display: grid;
     width: 100%;
-
+    justify-content: center;    
 }
 
 
@@ -188,7 +188,6 @@ nav{
     font-size: 25px;
     font-weight: bold;
     height: 60px;
-    text-align: center;
 }
 
 
@@ -198,8 +197,7 @@ nav{
     background-color: #0d0d0d;
     justify-content: center;
     align-items: center;
-    width: 80%;
-    margin: auto;
+    width: 100%;
     margin-bottom: 15px;
     min-height: 100px;
     border-radius: 8px;
@@ -228,7 +226,10 @@ nav{
 .link-url{
     color: antiquewhite;
     margin-top: 5px;
-    font-size: 18px;
+    font-size: 16px;
+    padding: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 
@@ -238,9 +239,83 @@ nav{
 }
 
 
+.layout{
+    margin-top: 80px;
+}
+
+
 .block{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+.box{
+    margin: auto;
+    width: 80%;
+    margin-bottom: 40px;
+}
+
+
+.name{
+    color: #0d9a98;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.7px;
+}
+
+
+.input input{
+    background-color: #0d0d0d;
+    color: #ffffff;
+    padding-left: 15px;
     width: 100%;
-    
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #2b2a2a;
+}
+
+
+.input input:hover{
+    background-color: #1c1b1b;
+}
+
+
+#message::placeholder{
+    margin-top: 0;
+}
+
+
+#message{
+    padding-right: 210px;
+    padding-bottom: 90px;
+}
+
+
+.input input:nth-child(3){
+    height: 50px;
+}
+
+
+.button{
+    background-color: #15b8d5;
+    text-align: center;
+    width: 72%;
+    margin: auto;
+    padding: 14px;
+    border-radius: 10px;
+}
+
+
+.send-btn{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
 }
 
 
@@ -311,7 +386,7 @@ nav{
 
     .main-grid{
         grid-template-columns: repeat(1, 1fr);
-        width: 60%;
+        width: 85%;
         margin: auto;
         justify-content: center;
     }
@@ -324,6 +399,23 @@ nav{
 
     .link-url{
         font-size: 11px;
+    }
+
+
+    .layout{
+        margin-top: 40px;
+        height: 100%;
+    }
+
+
+    .block{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    #message{
+        padding-right: 0;
+        padding-bottom: 90px;
     }
 
 
