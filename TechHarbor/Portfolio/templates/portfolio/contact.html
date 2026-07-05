@@ -47,7 +47,7 @@ Contact
     </div>
 
     <div class="main-right-child-grid">
-        <form method="post">
+        <form method="post" action="{% url 'contact' %}">
             {% csrf_token %}
 
             <div class="layout">
