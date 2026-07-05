@@ -33,7 +33,11 @@ def contact(request):
 def query(request):
     try:
         if request.method=="POST":
-            name=request.POST.get("")
+            name=request.POST.get("name")
+            email=request.POST.get("email")
+            message=request.POST.get("message")
+
+            
     except:
         pass
     return render(request, "portfolio/contact.html")
