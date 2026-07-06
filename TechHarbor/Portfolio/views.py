@@ -35,6 +35,11 @@ def contact(request):
 
 # Contact form query
 def contact_form(request):
+    print("EMAIL_HOST:", settings.EMAIL_HOST)
+    print("EMAIL_PORT:", settings.EMAIL_PORT)
+    print("EMAIL_HOST_USER:", settings.EMAIL_HOST_USER)
+    print("PASSWORD EXISTS:", settings.EMAIL_HOST_PASSWORD is not None)
+    
     if request.method=="POST":
         name=request.POST.get("name")
         email=request.POST.get("email")
