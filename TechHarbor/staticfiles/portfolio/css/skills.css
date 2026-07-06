@@ -1,0 +1,290 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+*{
+    margin: 0;
+    left: 0;
+}
+
+
+body{
+    background-color: #050506;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+
+
+.background-video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+
+.hamburger{
+    display: none;
+}
+
+
+.github-username{
+    font-size: 30px;
+    padding: 20px;
+    font-weight: bold;
+    color: aliceblue;
+    text-shadow: 2px 2px 4px #848282;
+}
+
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #050506;
+    border-bottom: 1px solid #222222;
+    z-index: 100;
+}
+
+
+.navbar{
+    display: flex;  
+}
+
+
+.navbar-content{
+    display: flex;
+    width: 69%;
+    margin-left: auto;
+}
+
+
+.navbar-content a{
+    display: flex;
+    text-decoration: none;
+    color: #babfc4;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    padding: 15px;
+    margin: auto;
+    border-radius: 8px;
+}
+
+
+.navbar-content a:hover{
+    background-color: #022624;
+}
+
+
+#hire-me{
+    justify-content: center;
+    background-color: azure;
+    color: black;
+    text-shadow: 2px 2px 4px #848282;
+}
+
+
+#hire-me:hover{
+    color: #1a1919;
+    transition: transform 0.1s ease-in-out;
+    transform: scale(1.05);
+}
+
+
+.footer{
+    background-color: #050506;
+    border-top: 1px solid #222222;
+    width: 100%;
+    left: 0;
+}
+
+
+.footer-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+
+.footer-icons img{
+    width: 40px;
+    border-radius: 40%;
+    padding: 50px 0 50px 0;
+}
+
+
+.copyright{
+    color: #babfc4;
+    text-align: center;
+}
+
+
+.copyright p{
+    margin-top: 0;
+    padding: 0 0 50px 0;
+}
+
+
+.copyright p{
+    margin-top: 0;
+    padding: 0 0 50px 0;
+}
+
+
+.copyright p{
+    margin-top: 0;
+    padding: 0 0 50px 0;
+}
+
+
+.headline{
+    margin: auto;
+    margin-top: 110px;
+    margin-bottom: 50px;
+    width: 35%;
+    color: #f2dada;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.heading{
+    font-size: 35px;
+    font-weight: bold;
+    width: 84%;
+    margin: auto;
+}
+
+
+.grid{
+    width: 90%;
+    margin: 40px auto;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+.card{
+    background-color: #0d0d0d;
+    margin: auto;
+    margin-bottom: 50px;
+    width: 80%;
+    min-height: 250px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 30px;
+    color: #babfc4;
+    text-decoration: none;
+    border: 1px solid #a19c9c;
+}
+
+
+.card:hover{
+    transition: transform 0.2s ease-in-out;
+    transform: scale(1.04);
+    border: 1px solid #07854f;
+    box-shadow: 1px 1px 12px #dac4c4;
+}
+
+
+.skill-name{
+    color: #7d40f7;
+    width: 90%;
+    margin-top: 30px;
+    margin-left: auto;
+    font-size: 22px;
+}
+
+
+.skill-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+
+.skill-grid img{
+    margin: auto;
+    margin-top: 20px;
+    border: 1px solid #7c7878;
+    border-radius: 12px;
+}
+
+
+.image:hover{
+    transition: transform 0.1s ease-in-out;
+    transform: scale(1.2);
+}
+
+
+/* For Tablets */
+@media (max-width: 768px) {
+    .navbar{
+        display: flex;
+    }
+
+
+    .hamburger{
+        display: block;
+        margin: auto;
+        transform: scale(1.7);
+    }
+
+
+    .github-username{
+        width: 70%;
+        font-size: 30px;
+        padding: 20px;
+    }
+
+
+    .navbar-content{
+        display: none;
+        flex-direction: column;
+    }
+
+
+    .navbar-content.active{
+        display: flex;
+    }
+
+
+    .main-grid{
+        margin: auto;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    .headline{
+        width: 70%;
+        font-size: 25px;
+    }
+
+
+    .heading{
+        font-size: 25px;
+    }
+
+
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    .card{
+        width: 95%;
+    }
+}
