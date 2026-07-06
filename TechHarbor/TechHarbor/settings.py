@@ -32,7 +32,7 @@ DEBUG = os.getenv("DEBUG", "False") == True
 ALLOWED_HOSTS = [
     "127.0.0.1",
     "localhost",
-    "https://techharbor-dzuq.onrender.com"
+    "techharbor-dzuq.onrender.com"
 ]
 
 
