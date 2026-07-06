@@ -295,6 +295,28 @@ nav{
 }
 
 
+.success{
+    background-color: #eaf1fa;
+    color: #4567ed;
+    width: 20%;
+    text-align: center;
+    margin: auto;
+    padding: 40px;
+    border-radius: 3px;
+}
+
+
+.error{
+    background-color: #eaf1fa;
+    color: #ff0000;
+    width: 20%;
+    text-align: center;
+    margin: auto;
+    padding: 40px;
+    border-radius: 3px;
+}
+
+
 .input input:nth-child(3){
     height: 50px;
 }

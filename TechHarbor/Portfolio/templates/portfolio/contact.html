@@ -21,6 +21,14 @@ Contact
     </p>
 </div>
 
+{% if messages %}
+    {% for message in messages  %}
+        <div class={{ message.tags }}>
+            <p>{{ message }}</p>
+        </div>
+    {% endfor %}
+{% endif %}
+
 <div class="main-grid">
     <div class="main-left-child-grid">
         <div class="brief-heading">💬 Direct Access</div>
@@ -47,7 +55,7 @@ Contact
     </div>
 
     <div class="main-right-child-grid">
-        <form method="post" action="{% url 'contact' %}">
+        <form method="post" action="{% url 'contact_form' %}">
             {% csrf_token %}
 
             <div class="layout">
@@ -58,7 +66,7 @@ Contact
                         </div>
                         <br>
                         <div class="input">
-                            <input type="text" name="name" id="name" placeholder="Your Name">
+                            <input type="text" name="name" id="name" placeholder="Your Name" required>
                         </div>
                     </div>
                     <div class="box">
@@ -67,7 +75,7 @@ Contact
                         </div>
                         <br>
                         <div class="input">
-                            <input type="email" name="email" id="email" placeholder="Email Address">
+                            <input type="email" name="email" id="email" placeholder="Email Address" required>
                         </div>
                     </div>
                     <div class="box">
@@ -76,15 +84,15 @@ Contact
                         </div>
                         <br>
                         <div class="input">
-                            <input type="text" name="message" id="message" placeholder="What's on your mind...??">
+                            <input type="text" name="message" id="message" placeholder="What's on your mind...??" required>
                         </div>
                     </div>
                 </div>
 
                 <div class="button">
-                    <button class="submit" type="submit">
-                        Send Engineering Brief
-                </button>
+                    <button class="send-btn" type="submit">
+                        ↗️ Send Engineering Brief
+                    </button>
                 </div>
             </div>
         </form>
