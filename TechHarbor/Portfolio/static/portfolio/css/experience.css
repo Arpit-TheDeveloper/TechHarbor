@@ -143,7 +143,6 @@ nav{
     margin: auto;
     margin-top: 110px;
     margin-bottom: 50px;
-    width: 35%;
     color: #ffffff;
     font-size: 40px;
     font-weight: bold;
@@ -185,14 +184,6 @@ nav{
 
 .tenure{
     font-size: 18px;
-}
-
-
-.separator{
-    background-color: #222222;
-    margin: auto;
-    width: 95%;
-    font-size: 1px;
 }
 
 
@@ -244,5 +235,37 @@ nav{
 
     .navbar-content.active{
         display: flex;
+    }
+
+
+    .heading{
+        width: 70%;
+    }
+    
+
+    .flex{
+        display: grid;
+        grid-template-columns: repeat((1, 1fr));
+    }
+
+
+    .company{
+        font-size: 30px;
+    }
+
+
+    .tenure{
+        font-size: 16px;
+    }
+
+
+    .details{
+        font-size: 18px;
+    }
+
+
+    .list{
+        margin-top: 30px;
+        margin-left: auto;
     }
 }
